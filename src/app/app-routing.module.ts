@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'defibrillateurs',
+    loadChildren: () => import('./defibrillateurs/defibrillateurs.module').then( m => m.DefibrillateursPageModule)
+  },
+  {
+    path: 'commandes',
+    loadChildren: () => import('./commandes/commandes.module').then( m => m.CommandesPageModule)
+  },
 ];
 
 @NgModule({
