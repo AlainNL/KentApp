@@ -1,0 +1,7 @@
+{
+  "name": "KentApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
