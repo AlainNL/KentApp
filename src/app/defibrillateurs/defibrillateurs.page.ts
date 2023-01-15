@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ITEM } from './defibrillateurs';
+import ItemJson from '../../assets/data.json';
+import { DefibrillateurDataService } from '../services/defibrillateur-data.service';
+
 
 @Component({
   selector: 'app-defibrillateurs',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefibrillateursPage implements OnInit {
 
-  constructor() { }
+  items: ITEM[] = ItemJson
 
-  ngOnInit() {
+  constructor() {
+
   }
 
+
+  ngOnInit() {
+    console.log(this.items)
+    //this.DefibrillateurDataService.getData().subscribe((data: DefibrillateurDataService) => (this.defibrillateur = data))
+  }
 }
