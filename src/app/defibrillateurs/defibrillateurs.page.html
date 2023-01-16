@@ -1,24 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>defibrillateurs</ion-title>
-  </ion-toolbar>
+    <img src="../assets/icon/LIFEAZ.png" class="ion-padding"/>
+          <ion-buttons (click)="showMenu = !showMenu" slot="end">
+              <img src="../assets/icon/icon_menu.png" class="ion-margin-horizontal"/>
+          </ion-buttons>
+        </ion-toolbar>
+          <ion-item *ngIf="showMenu">
+            <ion-label>DEFIBRILLATEURS </ion-label>
+          </ion-item>
+          <ion-item *ngIf="showMenu">
+            <ion-label [routerLink]="['/commandes']">COMMANDES</ion-label>
+          </ion-item>
 </ion-header>
 
 <ion-content>
+    <div class="ion-padding">
+      <h1>MES DEFIBRILLATEURS</h1>
+        <p>Retrouvez-ici tous vos défibrillateurs. Vous pouvez voir s’ils sont fonctionnels, s’ils nécessitent de la maintenance, et en rechercher un en particulier. </p>
+    </div>
+        <ion-card *ngFor="let item of items">
+          <ion-card-header>
+            <ion-card-title>{{item.serial}}</ion-card-title>
 
-    <h1>MES DEFIBRILLATEURS</h1>
-      <p>Retrouvez-ici tous vos défibrillateurs. Vous pouvez voir s’ils sont fonctionnels, s’ils nécessitent de la maintenance, et en rechercher un en particulier. </p>
+          </ion-card-header>
 
-      <ion-card *ngFor="let item of items">
-        <ion-card-header>
-          <ion-card-title>{{item.serial}}</ion-card-title>
-
-        </ion-card-header>
-
-        <ion-card-content>
-          <ion-card-subtitle>{{item.locationName}}</ion-card-subtitle>
-          <p>{{item.locationAddr}}</p>
-        </ion-card-content>
-      </ion-card>
+          <ion-card-content>
+            <ion-card-subtitle>{{item.locationName}}</ion-card-subtitle>
+            <p>{{item.locationAddr}}</p>
+          </ion-card-content>
+        </ion-card>
 
 </ion-content>

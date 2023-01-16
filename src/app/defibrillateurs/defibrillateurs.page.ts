@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ITEM } from './defibrillateurs';
 import ItemJson from '../../assets/data.json';
-import { DefibrillateurDataService } from '../services/defibrillateur-data.service';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-defibrillateurs',
@@ -11,15 +10,19 @@ import { DefibrillateurDataService } from '../services/defibrillateur-data.servi
 })
 export class DefibrillateursPage implements OnInit {
 
-  items: ITEM[] = ItemJson
+  items: ITEM[] = ItemJson;
+  showMenu= false;
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
-
 
   ngOnInit() {
     console.log(this.items)
     //this.DefibrillateurDataService.getData().subscribe((data: DefibrillateurDataService) => (this.defibrillateur = data))
+  }
+
+  navigate() {
+    this.router.navigate(['/commandes'])
   }
 }

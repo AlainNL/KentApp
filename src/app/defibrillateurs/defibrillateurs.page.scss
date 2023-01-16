@@ -1,6 +1,19 @@
+ion-toolbar {
+  --background: #000099;
+}
+
+ion-item {
+  --background: #000099;
+}
+
+ion-padding {
+  --ion-padding: 40px;
+}
+
 ion-content {
   --ion-background-color: #E5E5E5;
   font-family: Lato;
+  align-items: center;
 }
 
 ion-content h1 {
