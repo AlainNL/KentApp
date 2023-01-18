@@ -2,6 +2,10 @@ ion-toolbar {
   --background: #000099;
 }
 
+ion-header {
+  --ion-font-family: 'Lato', sans-serif;
+}
+
 ion-item {
   --background: #000099;
   color: white;
@@ -12,8 +16,8 @@ ion-padding {
 }
 
 ion-content {
-  --ion-background-color: #E5E5E5;
-  font-family: Lato;
+  --ion-background-color: #EAEBF2;
+  --ion-font-family: 'Lato', sans-serif;
   align-items: center;
 }
 
@@ -32,8 +36,23 @@ ion-content p {
 ion-card {
   --background: white;
   color: black;
+  --border-radius: 15px;
 }
 
 ion-card-title {
   color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+ion-card-subtitle {
+  color: black;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+ion-justify-content-around {
+  justify-content: space-around;
 }

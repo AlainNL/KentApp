@@ -1,4 +1,7 @@
 <ion-header>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@200&display=swap');
+  </style>
   <ion-toolbar>
     <img src="../assets/icon/LIFEAZ.png" class="ion-padding"/>
           <ion-buttons (click)="showMenu = !showMenu" slot="end">
@@ -20,8 +23,13 @@
     </div>
         <ion-card *ngFor="let item of items">
           <ion-card-header>
-            <ion-card-title>{{item.serial}}</ion-card-title>
-
+            <ion-row>
+            <ion-card-title>{{item.serial}}
+            </ion-card-title>
+              <img src="../assets/icon/icon_check.png" *ngIf="item.state<1"/>
+              <img src="../assets/icon/icon_danger.png" *ngIf="item.state>1"/>
+              <img src="../assets/icon/icon_inter.png" *ngIf="item.state===1"/>
+            </ion-row>
           </ion-card-header>
 
           <ion-card-content>
