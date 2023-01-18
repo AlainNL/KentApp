@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { DefibrillateursPageRoutingModule } from './defibrillateurs-routing.module';
 
 import { DefibrillateursPage } from './defibrillateurs.page';
-import {  HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
     IonicModule,
     DefibrillateursPageRoutingModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   declarations: [DefibrillateursPage]
 })
