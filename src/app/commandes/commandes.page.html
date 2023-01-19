@@ -5,14 +5,17 @@
               <img src="../assets/icon/icon_menu.png" class="ion-margin-horizontal"/>
           </ion-buttons>
         </ion-toolbar>
-          <ion-item *ngIf="showMenu">
-            <ion-label [routerLink]="['/defibrillateurs']">DEFIBRILLATEURS </ion-label>
+          <ion-item *ngIf="showMenu" lines="none">
+            <h6 [routerLink]="['/defibrillateurs']">DEFIBRILLATEURS </h6>
           </ion-item>
           <ion-item *ngIf="showMenu">
-            <ion-label>COMMANDES</ion-label>
+            <h6>COMMANDES</h6>
           </ion-item>
 </ion-header>
 
 <ion-content>
-
+    <div class="head-content">
+      <h1>MES COMMANDES</h1>
+        <p>Retrouvez-ici toutes vos commandes.</p>
+    </div>
 </ion-content>

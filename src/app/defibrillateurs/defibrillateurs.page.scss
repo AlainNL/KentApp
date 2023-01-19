@@ -1,5 +1,7 @@
 ion-toolbar {
   --background: #000099;
+  --padding-end: 20px;
+  --padding-start: 20px;
 }
 
 ion-header {
@@ -11,14 +13,18 @@ ion-item {
   color: white;
 }
 
-ion-padding {
-  --ion-padding: 40px;
+h6 {
+  margin-left: 50px;
+  --ion-font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
 }
 
 ion-content {
   --ion-background-color: #EAEBF2;
   --ion-font-family: 'Lato', sans-serif;
-  align-items: center;
+  --padding-end: 20px;
+  --padding-start: 20px;
 }
 
 ion-content h1 {
@@ -37,6 +43,7 @@ ion-card {
   --background: white;
   color: black;
   --border-radius: 15px;
+  box-shadow: none;
 }
 
 ion-card-title {
@@ -48,6 +55,7 @@ ion-card-title {
 
 ion-card-subtitle {
   color: black;
+  text-transform: capitalize;
   font-weight: 900;
   font-size: 14px;
   line-height: 17px;
@@ -55,4 +63,10 @@ ion-card-subtitle {
 
 ion-justify-content-around {
   justify-content: space-around;
+}
+
+.head-content {
+  margin-left: 19px;
+  margin-bottom: 34px;
+  margin-top: 13%;
 }
