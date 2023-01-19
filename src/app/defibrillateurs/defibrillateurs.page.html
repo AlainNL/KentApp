@@ -6,12 +6,13 @@
               <img src="../assets/icon/icon_menu.png" class="ion-margin-horizontal"/>
           </ion-buttons>
         </ion-toolbar>
-          <ion-item *ngIf="showMenu" lines="none">
-            <h6>DEFIBRILLATEURS</h6>
-          </ion-item>
-          <ion-item *ngIf="showMenu">
-            <h6 [routerLink]="['/commandes']">COMMANDES</h6>
-          </ion-item>
+        <ion-item *ngIf="showMenu" lines="none">
+          <div class="verticalLine">
+            <div class="menu-item1">DEFIBRILLATEURS</div>
+            <div class="menu-item2"[routerLink]="['/commandes']">COMMANDES</div>
+        </div>
+        </ion-item>
+
 </ion-header>
 
 <ion-content>

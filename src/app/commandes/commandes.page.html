@@ -5,12 +5,12 @@
               <img src="../assets/icon/icon_menu.png" class="ion-margin-horizontal"/>
           </ion-buttons>
         </ion-toolbar>
-          <ion-item *ngIf="showMenu" lines="none">
-            <h6 [routerLink]="['/defibrillateurs']">DEFIBRILLATEURS </h6>
-          </ion-item>
-          <ion-item *ngIf="showMenu">
-            <h6>COMMANDES</h6>
-          </ion-item>
+        <ion-item *ngIf="showMenu" lines="none">
+          <div class="verticalLine">
+            <div class="menu-item1"[routerLink]="['/defibrillateurs']">DEFIBRILLATEURS</div>
+            <div class="menu-item2">COMMANDES</div>
+        </div>
+        </ion-item>
 </ion-header>
 
 <ion-content>

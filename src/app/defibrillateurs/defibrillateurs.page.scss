@@ -13,13 +13,6 @@ ion-item {
   color: white;
 }
 
-h6 {
-  margin-left: 50px;
-  --ion-font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  font-weight: 900;
-}
-
 ion-content {
   --ion-background-color: #EAEBF2;
   --ion-font-family: 'Lato', sans-serif;
@@ -69,4 +62,30 @@ ion-justify-content-around {
   margin-left: 19px;
   margin-bottom: 34px;
   margin-top: 13%;
+}
+
+.verticalLine {
+  width: 2px;
+  height: 75%;
+  background:#3D3DC8;
+  position: relative;
+  margin-left: 17px;
+}
+
+.menu-item1 {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  margin-left: 35px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.menu-item2 {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  margin-left: 35px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 35px;
 }
