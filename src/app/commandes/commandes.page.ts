@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-commandes',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommandesPage implements OnInit {
 
-  constructor() { }
+  showMenu= false;
+
+  constructor(private router: Router) {
+
+  }
 
   ngOnInit() {
+  }
+
+  //routing page
+  navigate() {
+    this.router.navigate(['/defibrillateurs'])
   }
 
 }

@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CommandesPageRoutingModule } from './commandes-routing.module';
 
 import { CommandesPage } from './commandes.page';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CommandesPageRoutingModule
+    CommandesPageRoutingModule,
+    RouterModule
   ],
   declarations: [CommandesPage]
 })

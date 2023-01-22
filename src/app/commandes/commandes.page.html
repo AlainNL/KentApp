@@ -1,9 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>commandes</ion-title>
-  </ion-toolbar>
+    <img src="../assets/icon/LIFEAZ.png" class="ion-padding"/>
+          <ion-buttons (click)="showMenu = !showMenu" slot="end">
+              <img src="../assets/icon/icon_menu.png" class="ion-margin-horizontal"/>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-item *ngIf="showMenu" lines="none">
+          <div class="verticalLine">
+            <div class="menu-item1"[routerLink]="['/defibrillateurs']">DEFIBRILLATEURS</div>
+            <div class="menu-item2">COMMANDES</div>
+        </div>
+        </ion-item>
 </ion-header>
 
 <ion-content>
-
+    <div class="head-content">
+      <h1>MES COMMANDES</h1>
+        <p>Retrouvez-ici toutes vos commandes.</p>
+    </div>
 </ion-content>

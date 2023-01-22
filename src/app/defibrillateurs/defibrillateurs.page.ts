@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ITEM } from './defibrillateurs';
+import ItemJson from '../../assets/data.json';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-defibrillateurs',
@@ -7,9 +11,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefibrillateursPage implements OnInit {
 
-  constructor() { }
+  items: ITEM[] = ItemJson;
+  showMenu= false;
 
-  ngOnInit() {
+  constructor(private router: Router, private http: HttpClient) {
   }
 
+  ngOnInit() {
+    //console.log(this.items)
+
+    //API Endpoint
+    this.http
+      .get("http://localhost:3000/api/defibrillateurs")
+      .subscribe((res) => console.log(res)
+    )}
+
+    //routing page
+  navigate() {
+    this.router.navigate(['/commandes'])
+  }
 }
