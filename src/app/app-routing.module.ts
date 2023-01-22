@@ -11,10 +11,6 @@ const routes: Routes = [
     loadChildren: () => import('./commandes/commandes.module').then( m => m.CommandesPageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
     redirectTo: 'defibrillateurs',
     pathMatch: 'full'

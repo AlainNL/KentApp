@@ -17,6 +17,7 @@ export class CommandesPage implements OnInit {
   ngOnInit() {
   }
 
+  //routing page
   navigate() {
     this.router.navigate(['/defibrillateurs'])
   }

@@ -20,11 +20,13 @@ export class DefibrillateursPage implements OnInit {
   ngOnInit() {
     //console.log(this.items)
 
+    //API Endpoint
     this.http
       .get("http://localhost:3000/api/defibrillateurs")
       .subscribe((res) => console.log(res)
     )}
 
+    //routing page
   navigate() {
     this.router.navigate(['/commandes'])
   }
